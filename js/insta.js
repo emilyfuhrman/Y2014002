@@ -5,6 +5,8 @@ var init = function(){
 		cw: 1280, 		//default container width
 		ch: 600,		//default container height
 		wn: 4,			//default # images in one row
+		maxImages:10,	//maximum number of images on one page
+		currentPage:1,
 		toppad: 129,
 		floors: [],
 		images: [],
@@ -42,6 +44,7 @@ var init = function(){
 			});
 			self.visible = self.images;
 			//self.renderNav();
+			self.renderPagination();
 			self.renderImages();
 		},
 		renderNav:function(){
@@ -91,6 +94,40 @@ var init = function(){
 				;
 			btns.exit().remove();
 		},
+		renderPagination:function(){
+			var self = this;
+
+			this.sizeContainer();
+
+			//add page numbers if..
+			if(self.images.length >self.maxImages){
+
+				var numpages = Math.ceil(self.images.length/self.maxImages),
+					data = [];
+
+				for(var i=0; i<numpages; i++){
+					data.push(i+1);
+				}
+				
+				var pagenums = d3.select("#nav .cont")
+					.selectAll("div.pagenum")
+					.data(data);
+				pagenums.enter().append("div")
+					.classed("pagenum",true);
+				pagenums
+					.attr("class",function(d,i){
+						return i === 0 ? "pagenum current" : "pagenum";
+					})
+					.html(function(d){
+						return d;
+					})
+					.on("click",function(d,i){
+						d3.selectAll(".pagenum.current").classed("current",false);
+						d3.select(this).classed("current",true);
+					});
+				pagenums.exit().remove();
+			}
+		},
 		renderImages:function(){
 			var self = this,
 				data = self.visible,
@@ -99,8 +136,6 @@ var init = function(){
 				instadivs,
 				instahovs,
 				instaimgs;
-
-			this.sizeContainer();
 
 			instadivs = d3.select("div#imgs")
 				.selectAll("div.insta")
@@ -123,18 +158,6 @@ var init = function(){
 				});
 			instadivs
 				.exit()
-				/*.transition()
-				.duration(100)
-				.style("left",function(d,i){
-					d.newleft = (i%3 === 0 ? -1 : 1)*1000;
-					d.left = d.newleft;
-					return d.left +"px";
-				})
-				.style("top",function(d,i){
-					d.newtop  = (i%2 === 0 ? 1 : -1)*1000;
-					d.top = d.newtop;
-					return d.top +"px";
-				})*/
 				.remove();
 
 			this.positionDivs(instadivs);
@@ -196,33 +219,6 @@ var init = function(){
 			}
 
 			divs
-				/*.style("top",function(d,i){
-					var pos = d.top || 0;
-					return pos +"px";
-				})
-				.style("left",function(d,i){
-					var pos = d.left || 0;
-					return pos +"px";
-				})
-				.transition()
-				.duration(function(d,i){
-
-					d.newleft = newxpos(d,i);
-					d.newtop  = newypos(d,i);
-
-						//find the distance it needs to travel
-					var	xdist = Math.abs(d.left -d.newleft),
-						ydist = Math.abs(d.top -d.newtop),
-
-						xscale = xdist/100,
-						yscale = ydist/100;
-
-					d.left = d.newleft;
-					d.top = d.newtop;
-
-					return (xscale +yscale)*42;
-				})
-				.ease("linear")*/
 				.style("left",function(d,i){
 					d.left = newxpos(d,i);
 					return d.left +"px";

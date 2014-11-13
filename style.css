@@ -48,20 +48,28 @@ body {
 
 #nav {
 	position:fixed;
-	background:#fff;
-	width:9px;
-	height:100%;
-	top:0;
-	left:0;
+	left:114px;
+	bottom:45px;
 	z-index:99;
 }
-
 #nav .cont {
-	position:absolute;
-	width:15px;
-	height:100%;
-	top:125px;
-	left:24px;
+}
+#nav .cont .pagenum {
+	float:left;
+	color:red;
+	background:transparent;
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;
+	letter-spacing:1px;
+	line-height:24px;
+	margin-left:12px;
+	padding:0 6px 1px;
+	cursor:pointer;
+}
+#nav .cont .pagenum.current {
+	color:#fff;
+	background:red;
 }
 
 #footer {
