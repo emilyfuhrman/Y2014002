@@ -5,7 +5,7 @@ var init = function(){
 		cw: 1280, 		//default container width
 		ch: 600,		//default container height
 		wn: 4,			//default # images in one row
-		maxImages:12,	//maximum number of images on one page
+		maxImages:24,	//maximum number of images on one page
 		currentPage:1,
 		toppad: 129,
 		floors: [],
