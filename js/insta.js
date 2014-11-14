@@ -5,7 +5,7 @@ var init = function(){
 		cw: 1280, 		//default container width
 		ch: 600,		//default container height
 		wn: 4,			//default # images in one row
-		maxImages:10,	//maximum number of images on one page
+		maxImages:12,	//maximum number of images on one page
 		currentPage:1,
 		toppad: 129,
 		floors: [],
@@ -42,10 +42,10 @@ var init = function(){
 
 				self.images.push(x);
 			});
-			self.visible = self.images;
+			//self.visible = self.images;
 			//self.renderNav();
 			self.renderPagination();
-			self.renderImages();
+			self.renderImages(self.currentPage);
 		},
 		renderNav:function(){
 			var self = this,
@@ -97,8 +97,6 @@ var init = function(){
 		renderPagination:function(){
 			var self = this;
 
-			this.sizeContainer();
-
 			//add page numbers if..
 			if(self.images.length >self.maxImages){
 
@@ -124,18 +122,33 @@ var init = function(){
 					.on("click",function(d,i){
 						d3.selectAll(".pagenum.current").classed("current",false);
 						d3.select(this).classed("current",true);
+						self.currentPage = d;
+						self.renderImages(self.currentPage);
 					});
 				pagenums.exit().remove();
 			}
 		},
-		renderImages:function(){
-			var self = this,
-				data = self.visible,
+		renderImages:function(currentPage){
 
+			//start at top
+			window.scrollTo(0,0);
+
+			var self = this,
+				data,
 				instacont,
 				instadivs,
 				instahovs,
 				instaimgs;
+
+			//separate out visible images
+			self.visible = [];
+			var cutoff = (currentPage*self.maxImages) >self.images.length ? self.images.length : (currentPage*self.maxImages);
+			for(var i=((currentPage -1)*self.maxImages); i<cutoff; i++){
+				self.visible.push(self.images[i]);
+			}
+			data = self.visible;
+
+			self.sizeContainer();
 
 			instadivs = d3.select("div#imgs")
 				.selectAll("div.insta")
