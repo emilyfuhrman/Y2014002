@@ -128,5 +128,13 @@
       "state":"Mexico",
       "floor":"6",
       "type":"museum"
+   },
+   { 
+      "ext":"019", 
+      "address":"Gran Hotel Ciudad de Mexico", 
+      "city":"Mexico City",
+      "state":"Mexico",
+      "floor":"5",
+      "type":"hotel"
    }
 ]
