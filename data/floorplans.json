@@ -136,5 +136,13 @@
       "state":"Mexico",
       "floor":"5",
       "type":"hotel"
+   },
+   { 
+      "ext":"020", 
+      "address":"150 E. Houston St.", 
+      "city":"San Antonio",
+      "state":"TX",
+      "floor":"4",
+      "type":"hotel"
    }
 ]
