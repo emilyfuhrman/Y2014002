@@ -144,5 +144,13 @@
       "state":"TX",
       "floor":"4",
       "type":"hotel"
+   },
+   { 
+      "ext":"021", 
+      "address":"653 11th Ave.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"16",
+      "type":"hotel"
    }
 ]
