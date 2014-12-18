@@ -152,5 +152,21 @@
       "state":"NY",
       "floor":"16",
       "type":"hotel"
+   },
+   { 
+      "ext":"022", 
+      "address":"501 Geary St.", 
+      "city":"San Francisco",
+      "state":"CA",
+      "floor":"6",
+      "type":"hotel"
+   },
+   { 
+      "ext":"023", 
+      "address":"The Ludlow Hotel", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"15",
+      "type":"hotel"
    }
 ]
