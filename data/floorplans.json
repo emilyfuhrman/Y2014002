@@ -168,5 +168,13 @@
       "state":"NY",
       "floor":"15",
       "type":"hotel"
+   },
+   { 
+      "ext":"024", 
+      "address":"Gare Centrale (MTR)", 
+      "city":"Montreal",
+      "state":"Quebec",
+      "floor":"1",
+      "type":"station"
    }
 ]
