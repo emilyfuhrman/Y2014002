@@ -21,26 +21,28 @@ var init = function(){
 			var self = insta,
 				data = data || [];
 			data.forEach(function(d,i){
+				
+				if(d.display !== false){
+					var x = new Image();
 
-				var x = new Image();
+					//add floor to floor list
+					if(self.floors.filter(function(_d){return _d.floor === d.floor;}).length === 0){
+						var obj = { "id":d.floor,"floor":d.floor }
+						self.floors.push(obj);
+					}
+					x.src = "imgs/" +d.ext +".jpg";
 
-				//add floor to floor list
-				if(self.floors.filter(function(_d){return _d.floor === d.floor;}).length === 0){
-					var obj = { "id":d.floor,"floor":d.floor }
-					self.floors.push(obj);
+					x.ext = d.ext;
+					x.floor = d.floor;
+					x.address = d.address;
+					x.city = d.city;
+					x.state = d.state;
+
+					x.width = self.iw;
+					x.height = self.iw;
+
+					self.images.push(x);
 				}
-				x.src = "imgs/" +d.ext +".jpg";
-
-				x.ext = d.ext;
-				x.floor = d.floor;
-				x.address = d.address;
-				x.city = d.city;
-				x.state = d.state;
-
-				x.width = self.iw;
-				x.height = self.iw;
-
-				self.images.push(x);
 			});
 			//self.visible = self.images;
 			//self.renderNav();

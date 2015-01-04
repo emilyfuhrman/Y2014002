@@ -175,6 +175,7 @@
       "city":"Montreal",
       "state":"Quebec",
       "floor":"1",
-      "type":"station"
+      "type":"station",
+      "display":false
    }
 ]
