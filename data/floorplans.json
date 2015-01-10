@@ -177,5 +177,13 @@
       "floor":"1",
       "type":"station",
       "display":false
+   },
+   { 
+      "ext":"025", 
+      "address":"257 Bowery", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"1",
+      "type":"gallery"
    }
 ]
