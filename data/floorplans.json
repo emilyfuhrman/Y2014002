@@ -185,5 +185,13 @@
       "state":"NY",
       "floor":"1",
       "type":"gallery"
+   },
+   { 
+      "ext":"026", 
+      "address":"Yale University Art Gallery", 
+      "city":"New Havent",
+      "state":"CT",
+      "floor":"2",
+      "type":"gallery"
    }
 ]
