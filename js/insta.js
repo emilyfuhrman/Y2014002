@@ -145,11 +145,18 @@ var init = function(){
 				instaimgs;
 
 			//separate out visible images
-			self.visible = [];
-			var cutoff = (currentPage*self.maxImages) >self.images.length ? self.images.length : (currentPage*self.maxImages);
-			for(var i=((currentPage -1)*self.maxImages); i<cutoff; i++){
-				self.visible.push(self.images[i]);
+			function getImages(currentPage){
+				var imgs = [],
+					cutoff = (currentPage*self.maxImages) >self.images.length ? self.images.length : (currentPage*self.maxImages);
+				for(var i=((currentPage -1)*self.maxImages); i<cutoff; i++){
+					imgs.push(self.images[i]);
+				}
+				return imgs;
 			}
+			
+			//in case someone enters a rogue hash or w/e
+			self.visible = getImages(currentPage).length >0 ? getImages(currentPage) : getImages(1);
+
 			data = self.visible;
 
 			self.sizeContainer();
