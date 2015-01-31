@@ -6,11 +6,11 @@ var init = function(){
 		ch: 600,		//default container height
 		wn: 4,			//default # images in one row
 		maxImages:24,	//maximum number of images on one page
-		currentPage:1,
 		toppad: 129,
 		floors: [],
 		images: [],
 		visible: [],
+		currentPage:1,
 		makeRequest:function(callback){
 			d3.json("data/floorplans.json", function(data){
 				var _data = data.reverse();
@@ -44,6 +44,9 @@ var init = function(){
 					self.images.push(x);
 				}
 			});
+
+			self.currentPage = window.location.hash.length >0 ? parseInt((window.location.hash).split("#")[1]) : 1;
+
 			//self.visible = self.images;
 			//self.renderNav();
 			self.renderPagination();
@@ -116,10 +119,10 @@ var init = function(){
 					.classed("pagenum",true);
 				pagenums
 					.attr("class",function(d,i){
-						return i === 0 ? "pagenum current" : "pagenum";
+						return parseInt(d) === self.currentPage ? "pagenum current" : "pagenum";
 					})
 					.html(function(d){
-						return d;
+						return "<a href='#" +d +"''>" +d +"</a>";
 					})
 					.on("click",function(d,i){
 						d3.selectAll(".pagenum.current").classed("current",false);
@@ -288,11 +291,7 @@ var init = function(){
 				.style("height",function(d){
 					var h = Math.ceil(self.visible.length/self.wn)*(self.iw +1 +16);
 					return (h*.15) +"px";
-				})
-				/*.style("max-height",function(){
-					return window.innerHeight -124 +"px";
-				})*/
-				;
+				});
 		},
 		//requires top and left coords
 		markerMove:function(top,left){
@@ -317,3 +316,12 @@ $(window).resize(function(){
 	insta.sizeContainer();
 	insta.positionDivs();
 });
+
+window.onhashchange = function(){
+	var hashPage = window.location.hash.length >0 ? parseInt((window.location.hash).split("#")[1]) : 1;
+	if(hashPage !== insta.currentPage){
+		insta.currentPage = hashPage;
+		insta.renderPagination();
+		insta.renderImages(insta.currentPage);
+	}
+}
