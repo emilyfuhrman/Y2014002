@@ -154,8 +154,15 @@ var init = function(){
 				return imgs;
 			}
 			
+			var imgs = getImages(currentPage);
+
 			//in case someone enters a rogue hash or w/e
-			self.visible = getImages(currentPage).length >0 ? getImages(currentPage) : getImages(1);
+			if(imgs.length >0){
+				self.visible = imgs;
+			} else{
+				self.visible = getImages(1);
+				d3.select(d3.selectAll(".pagenum")[0][0]).classed("current",true);
+			}
 
 			data = self.visible;
 
