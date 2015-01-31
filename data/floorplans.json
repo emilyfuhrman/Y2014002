@@ -193,5 +193,13 @@
       "state":"CT",
       "floor":"2",
       "type":"gallery"
+   },
+   { 
+      "ext":"027", 
+      "address":"Butler Library", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"2",
+      "type":"library"
    }
 ]
