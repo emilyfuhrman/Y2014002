@@ -58,7 +58,6 @@ body {
 #nav .cont .pagenum {
 	float:left;
 	color:red;
-	background:transparent;
 	font-size:18px;
 	font-weight:bold;
 	text-decoration:none;
@@ -69,8 +68,8 @@ body {
 	cursor:pointer;
 }
 #nav .cont .pagenum.current {
-	color:#fff;
-	background:red;
+	border:1px solid red;
+	padding:3px 7px 0;
 }
 
 #footer {
