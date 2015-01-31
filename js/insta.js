@@ -127,8 +127,8 @@ var init = function(){
 					.on("click",function(d,i){
 						d3.selectAll(".pagenum.current").classed("current",false);
 						d3.select(this).classed("current",true);
-						self.currentPage = d;
-						self.renderImages(self.currentPage);
+						//self.currentPage = d;
+						//self.renderImages(self.currentPage);
 					});
 				pagenums.exit().remove();
 			}
@@ -319,9 +319,7 @@ $(window).resize(function(){
 
 window.onhashchange = function(){
 	var hashPage = window.location.hash.length >0 ? parseInt((window.location.hash).split("#")[1]) : 1;
-	if(hashPage !== insta.currentPage){
-		insta.currentPage = hashPage;
-		insta.renderPagination();
-		insta.renderImages(insta.currentPage);
-	}
+	insta.currentPage = hashPage;
+	insta.renderPagination();
+	insta.renderImages(insta.currentPage);
 }
