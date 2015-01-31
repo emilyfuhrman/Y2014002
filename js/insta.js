@@ -122,13 +122,12 @@ var init = function(){
 						return parseInt(d) === self.currentPage ? "pagenum current" : "pagenum";
 					})
 					.html(function(d){
-						return "<a href='#" +d +"''>" +d +"</a>";
+						return d;
 					})
 					.on("click",function(d,i){
 						d3.selectAll(".pagenum.current").classed("current",false);
 						d3.select(this).classed("current",true);
-						//self.currentPage = d;
-						//self.renderImages(self.currentPage);
+						window.location.hash = d;
 					});
 				pagenums.exit().remove();
 			}

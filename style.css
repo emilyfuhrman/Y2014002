@@ -57,6 +57,12 @@ body {
 }
 #nav .cont .pagenum {
 	float:left;
+	color:red;
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;
+	letter-spacing:1px;
+	line-height:24px;
 	margin-left:12px;
 	padding:4px 8px 1px;
 	cursor:pointer;
@@ -65,13 +71,7 @@ body {
 	border:1px solid red;
 	padding:3px 7px 0;
 }
-#nav .cont .pagenum a {
-	color:red;
-	font-size:18px;
-	font-weight:bold;
-	text-decoration:none;
-	letter-spacing:1px;
-	line-height:24px;
+#nav .cont .pagenum {
 }
 
 #footer {
