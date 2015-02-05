@@ -201,5 +201,13 @@
       "state":"NY",
       "floor":"2",
       "type":"library"
+   },
+   { 
+      "ext":"028", 
+      "address":"1605 Broadway", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"4",
+      "type":"hotel"
    }
 ]
