@@ -209,5 +209,13 @@
       "state":"NY",
       "floor":"4",
       "type":"hotel"
+   },
+   { 
+      "ext":"029", 
+      "address":"MoMA PS1", 
+      "city":"Long Island City",
+      "state":"NY",
+      "floor":"3",
+      "type":"museum"
    }
 ]
