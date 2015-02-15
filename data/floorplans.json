@@ -217,5 +217,13 @@
       "state":"NY",
       "floor":"3",
       "type":"museum"
+   },
+   { 
+      "ext":"030", 
+      "address":"Dia:Beacon", 
+      "city":"Beacon",
+      "state":"NY",
+      "floor":"1",
+      "type":"museum"
    }
 ]
