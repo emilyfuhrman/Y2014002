@@ -225,5 +225,19 @@
       "state":"NY",
       "floor":"1",
       "type":"museum"
+   },
+   { 
+      "ext":"031", 
+      "address":"111 8th Ave.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"3"
+   },
+   { 
+      "ext":"032", 
+      "address":"560 Riverside Dr.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"8"
    }
 ]
