@@ -239,5 +239,12 @@
       "city":"New York",
       "state":"NY",
       "floor":"8"
+   },
+   { 
+      "ext":"033", 
+      "address":"Cooper Hewitt Design Museum", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"2"
    }
 ]
