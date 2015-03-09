@@ -245,6 +245,7 @@
       "address":"Cooper Hewitt Design Museum", 
       "city":"New York",
       "state":"NY",
-      "floor":"2"
+      "floor":"2",
+      "type":"museum"
    }
 ]
