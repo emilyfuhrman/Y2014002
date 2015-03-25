@@ -247,5 +247,12 @@
       "state":"NY",
       "floor":"2",
       "type":"museum"
+   },
+   { 
+      "ext":"034", 
+      "address":"160 5th Ave.", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"7"
    }
 ]
