@@ -196,7 +196,7 @@
    },
    { 
       "ext":"027", 
-      "address":"Butler Library", 
+      "address":"Columbia Butler Library", 
       "city":"New York",
       "state":"NY",
       "floor":"2",
@@ -254,5 +254,21 @@
       "city":"New York",
       "state":"NY",
       "floor":"7"
+   },
+   { 
+      "ext":"035", 
+      "address":"Museum of the City of New York", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"2",
+      "type":"museum"
+   },
+   { 
+      "ext":"036", 
+      "address":"NYU Bobst Library", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"2",
+      "type":"library"
    }
 ]
