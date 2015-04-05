@@ -283,6 +283,7 @@
       "address":"3066 Gate House Plz.", 
       "city":"Falls Church",
       "state":"VA",
-      "floor":"1"
+      "floor":"1",
+      "type":"restaurant"
    }
 ]
