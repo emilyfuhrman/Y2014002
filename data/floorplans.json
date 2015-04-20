@@ -285,5 +285,13 @@
       "state":"VA",
       "floor":"1",
       "type":"restaurant"
+   },
+   { 
+      "ext":"039", 
+      "address":"Museum of Modern Art", 
+      "city":"New York",
+      "state":"NY",
+      "floor":"3",
+      "type":"museum"
    }
 ]
