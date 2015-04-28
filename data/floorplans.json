@@ -293,5 +293,13 @@
       "state":"NY",
       "floor":"3",
       "type":"museum"
+   },
+   { 
+      "ext":"040", 
+      "address":"The Standard, High Line",
+      "city":"New York",
+      "state":"NY",
+      "floor":"9",
+      "type":"hotel"
    }
 ]
