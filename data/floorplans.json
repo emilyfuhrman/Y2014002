@@ -301,5 +301,13 @@
       "state":"NY",
       "floor":"9",
       "type":"hotel"
+   },
+   { 
+      "ext":"041", 
+      "address":"Noguchi Museum",
+      "city":"Queens",
+      "state":"NY",
+      "floor":"1",
+      "type":"museum"
    }
 ]
