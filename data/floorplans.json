@@ -309,5 +309,13 @@
       "state":"NY",
       "floor":"1",
       "type":"museum"
+   },
+   { 
+      "ext":"042", 
+      "address":"W New York - Downtown",
+      "city":"New York",
+      "state":"NY",
+      "floor":"5",
+      "type":"hotel"
    }
 ]
