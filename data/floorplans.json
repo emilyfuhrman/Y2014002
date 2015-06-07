@@ -317,5 +317,12 @@
       "state":"NY",
       "floor":"5",
       "type":"hotel"
+   },
+   { 
+      "ext":"043", 
+      "address":"156 5th Ave.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"2"
    }
 ]
