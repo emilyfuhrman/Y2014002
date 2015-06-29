@@ -331,5 +331,12 @@
       "city":"New York",
       "state":"NY",
       "floor":"21"
+   },
+   { 
+      "ext":"045", 
+      "address":"111 John St.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"4"
    }
 ]
