@@ -346,5 +346,13 @@
       "state":"CA",
       "floor":"1",
       "type":"hotel"
+   },
+   { 
+      "ext":"047", 
+      "address":"55 4th St.",
+      "city":"San Francisco",
+      "state":"CA",
+      "floor":"1",
+      "type":"hotel"
    }
 ]
