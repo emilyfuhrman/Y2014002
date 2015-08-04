@@ -354,5 +354,13 @@
       "state":"CA",
       "floor":"1",
       "type":"hotel"
+   },
+   { 
+      "ext":"048", 
+      "address":"SculptureCenter",
+      "city":"Long Island City",
+      "state":"NY",
+      "floor":"1",
+      "type":"museum"
    }
 ]
