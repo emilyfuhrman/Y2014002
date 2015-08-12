@@ -362,5 +362,12 @@
       "state":"NY",
       "floor":"1",
       "type":"museum"
+   },
+   { 
+      "ext":"049", 
+      "address":"The Princeton Club",
+      "city":"New York",
+      "state":"NY",
+      "floor":"4"
    }
 ]
