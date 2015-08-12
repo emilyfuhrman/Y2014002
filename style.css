@@ -8,8 +8,8 @@ body {
 }
 
 #header {
-	background:url('imgs/header.svg') no-repeat 12px 27px;
-	background-size:484.5px 53.04px;
+	background:url('imgs/header.svg') no-repeat 7px 27px;
+	background-size:500px;
 	position:fixed;
 	width:100%;
 	height:90px;
