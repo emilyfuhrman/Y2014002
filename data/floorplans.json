@@ -369,5 +369,19 @@
       "city":"New York",
       "state":"NY",
       "floor":"4"
+   },
+   { 
+      "ext":"050", 
+      "address":"356 W 58th St.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"1"
+   },
+   { 
+      "ext":"051", 
+      "address":"300 W 57th St.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"29"
    }
 ]
