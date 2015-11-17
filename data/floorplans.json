@@ -386,6 +386,13 @@
    },
    { 
       "ext":"052", 
+      "address":"Troldhaugen",
+      "city":"Bergen",
+      "state":"Norway",
+      "floor":"1"
+   },
+   { 
+      "ext":"053", 
       "address":"Hammer Health Sciences Building",
       "city":"New York",
       "state":"NY",
