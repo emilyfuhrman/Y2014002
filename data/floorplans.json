@@ -397,5 +397,12 @@
       "city":"New York",
       "state":"NY",
       "floor":"5"
+   },
+   { 
+      "ext":"054", 
+      "address":"68 Jay St.",
+      "city":"Brooklyn",
+      "state":"NY",
+      "floor":"4"
    }
 ]
