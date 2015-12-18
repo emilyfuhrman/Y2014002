@@ -404,5 +404,12 @@
       "city":"Brooklyn",
       "state":"NY",
       "floor":"4"
+   },
+   { 
+      "ext":"055", 
+      "address":"295 Lafayette St.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"5"
    }
 ]
