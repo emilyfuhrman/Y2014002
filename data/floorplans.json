@@ -411,5 +411,12 @@
       "city":"New York",
       "state":"NY",
       "floor":"5"
+   },
+   { 
+      "ext":"056", 
+      "address":"The Plaza Hotel",
+      "city":"New York",
+      "state":"NY",
+      "floor":"2"
    }
 ]
