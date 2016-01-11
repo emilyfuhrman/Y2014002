@@ -418,5 +418,19 @@
       "city":"New York",
       "state":"NY",
       "floor":"2"
+   },
+   { 
+      "ext":"057", 
+      "address":"50 Broadway",
+      "city":"Cambridge",
+      "state":"MA",
+      "floor":"10"
+   },
+   { 
+      "ext":"058", 
+      "address":"Whitney Museum of American Art",
+      "city":"New York",
+      "state":"NY",
+      "floor":"3"
    }
 ]
