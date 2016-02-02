@@ -432,5 +432,12 @@
       "city":"New York",
       "state":"NY",
       "floor":"3"
+   },
+   { 
+      "ext":"059", 
+      "address":"150 Claremont Ave.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"1"
    }
 ]
