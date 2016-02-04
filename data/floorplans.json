@@ -439,5 +439,19 @@
       "city":"New York",
       "state":"NY",
       "floor":"1"
+   },
+   { 
+      "ext":"060", 
+      "address":"537 W 20th St.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"2"
+   },
+   { 
+      "ext":"061", 
+      "address":"180 10th Ave.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"1"
    }
 ]
