@@ -453,5 +453,26 @@
       "city":"New York",
       "state":"NY",
       "floor":"1"
+   },
+   { 
+      "ext":"062", 
+      "address":"242 W 30th St.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"8"
+   },
+   { 
+      "ext":"063", 
+      "address":"113 W 60th St.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"12"
+   },
+   { 
+      "ext":"064", 
+      "address":"20 Lincoln Center Plaza",
+      "city":"New York",
+      "state":"NY",
+      "floor":"3"
    }
 ]
