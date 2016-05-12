@@ -474,5 +474,19 @@
       "city":"New York",
       "state":"NY",
       "floor":"3"
+   },
+   { 
+      "ext":"065", 
+      "address":"330 W 56th St.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"21"
+   },
+   { 
+      "ext":"066", 
+      "address":"Canal de Panamá, Miraflores",
+      "city":"Panama City",
+      "state":"Panama",
+      "floor":"21"
    }
 ]
