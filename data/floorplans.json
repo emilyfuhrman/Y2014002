@@ -368,7 +368,8 @@
       "address":"The Princeton Club",
       "city":"New York",
       "state":"NY",
-      "floor":"4"
+      "floor":"4",
+      "display":false
    },
    { 
       "ext":"050", 
@@ -403,14 +404,16 @@
       "address":"68 Jay St.",
       "city":"Brooklyn",
       "state":"NY",
-      "floor":"4"
+      "floor":"4",
+      "display":false
    },
    { 
       "ext":"055", 
       "address":"295 Lafayette St.",
       "city":"New York",
       "state":"NY",
-      "floor":"5"
+      "floor":"5",
+      "display":false
    },
    { 
       "ext":"056", 
@@ -491,6 +494,36 @@
       "address":"Canal de Panamá, Miraflores",
       "city":"Panama City",
       "state":"Panama",
-      "floor":"2"
+      "floor":"2",
+      "display":false
+   },
+   { 
+      "ext":"067", 
+      "address":"20 Grand Ave.",
+      "city":"Brooklyn",
+      "state":"NY",
+      "floor":"1"
+   },
+   { 
+      "ext":"068", 
+      "address":"101 6th Ave.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"23",
+      "type":"commercial"
+   },
+   { 
+      "ext":"069", 
+      "address":"1335 6th Ave.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"12"
+   },
+   { 
+      "ext":"070", 
+      "address":"20 W 26th St.",
+      "city":"New York",
+      "state":"NY",
+      "floor":"7"
    }
 ]
