@@ -525,5 +525,18 @@
       "city":"New York",
       "state":"NY",
       "floor":"7"
+   },
+   { 
+      "ext":"071", 
+      "address":"Dia:Chelsea",
+      "city":"New York",
+      "state":"NY",
+      "floor":"5"
+   },
+   { 
+      "ext":"072", 
+      "address":"365 Park Ave. S",
+      "city":"New York",
+      "state":"NY"
    }
 ]
